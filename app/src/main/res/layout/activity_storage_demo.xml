@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_storage_demo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cice.storagedemo.StorageDemoActivity">
+
+    <Button
+        android:text="abrir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/nuevoBtn"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/abrirBtn"
+        android:onClick="openFile"/>
+
+    <Button
+        android:text="guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/abrirBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/guardarBtn"
+        android:onClick="saveFile"/>
+
+    <Button
+        android:text="Nuevo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="47dp"
+        android:id="@+id/nuevoBtn"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:onClick="newFile"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:layout_below="@+id/abrirBtn"
+        android:layout_marginTop="15dp"
+        android:id="@+id/editText"
+        android:layout_alignStart="@+id/nuevoBtn"
+        android:layout_alignEnd="@+id/guardarBtn"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
